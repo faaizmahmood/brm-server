@@ -32,7 +32,7 @@ if (cluster.isPrimary) {
     app.use(bodyParser.json())
 
     app.use(cors({
-        origin: ['http://localhost:5173'],
+        origin: ['http://localhost:5173', 'https://brm-eight.vercel.app', 'https://brm-faaizmahmoods-projects.vercel.app/'],
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         credentials: true
     }))
